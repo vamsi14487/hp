@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<theme>
+		<style class="CommonHint">
+			<hint name="kd-radius-extra-small" value="2"/>
+			<hint name="kd-radius-small" value="4"/>
+			<hint name="kd-radius-middle" value="6"/>
+			<hint name="kd-radius-large" value="8"/>
+			<hint name="kd-radius-extra-large" value="12"/>
+			<hint name="kd-font-size-extra-small" value="10"/>
+			<hint name="kd-font-size-small" value="12"/>
+			<hint name="kd-font-size-base" value="14"/>
+			<hint name="kd-font-size-middle" value="16"/>
+			<hint name="kd-font-size-large" value="18"/>
+			<hint name="kd-font-size-extra-large" value="20"/>
+			<hint name="kd-font-size-xx-large" value="24"/>
+			<hint name="kd-font-size-xxx-large" value="28"/>
+			<hint name="kd-font-line-height-extra-small" value="18"/>
+			<hint name="kd-font-line-height-small" value="20"/>
+			<hint name="kd-font-line-height-base" value="22"/>
+			<hint name="kd-font-line-height-middle" value="24"/>
+			<hint name="kd-font-line-height-large" value="30"/>
+			<hint name="kd-font-line-height-extra-large" value="32"/>
+			<hint name="kd-font-line-height-xx-large" value="36"/>
+			<hint name="kd-font-line-height-xxx-large" value="40"/>
+			<hint name="kd-box-shadow-small-thickness" value="4"/>
+			<hint name="kd-box-shadow-middle-thickness" value="4"/>
+			<hint name="kd-box-shadow-large-thickness" value="32"/>
+			<hint name="kd-box-shadow-extra-large-thickness" value="48"/>
+			<hint name="kd-box-shadow-glow-thickness" value="4"/>
+			<hint name="kd-box-shadow-small-offset" value="1"/>
+			<hint name="kd-box-shadow-middle-offset" value="1"/>
+			<hint name="kd-box-shadow-large-offset" value="12"/>
+			<hint name="kd-box-shadow-extra-large-offset" value="32"/>
+			<hint name="kd-box-shadow-glow-offset" value="0"/>
+			<hint name="kd-box-shadow-middle-x-offset" value="0"/>
+			<hint name="kd-box-shadow-middle-y-offset" value="1"/>
+			<hint name="kd-box-shadow-middle-blur" value="4"/>
+			<hint name="kd-box-shadow-large-x-offset" value="0"/>
+			<hint name="kd-box-shadow-large-y-offset" value="12"/>
+			<hint name="kd-box-shadow-large-blur" value="32"/>
+			<hint name="kd-box-shadow-glow-x-offset" value="0"/>
+			<hint name="kd-box-shadow-glow-y-offset" value="0"/>
+			<hint name="kd-box-shadow-glow-blur" value="4"/>
+		</style>
+	</theme>
+</shell>

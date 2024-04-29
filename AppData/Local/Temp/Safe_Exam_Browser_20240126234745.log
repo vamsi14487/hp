@@ -1,0 +1,98 @@
+[211C:02F0][2024-01-26T23:47:45]i001: Burn v3.11.2.4516, Windows v10.0 (Build 22631: Service Pack 0), path: C:\Users\hp\AppData\Local\Temp\{6256ED0F-E9F2-42ED-AE17-DDF2901E2783}\.cr\SEB_3.6.0.633_SetupBundle.exe
+[211C:02F0][2024-01-26T23:47:45]i000: Initializing numeric variable 'DotNetMinimumVersion' to value '528040'
+[211C:02F0][2024-01-26T23:47:45]i000: Initializing version variable 'VisualCppMinimumVersion' to value '14.26.28720.0'
+[211C:02F0][2024-01-26T23:47:45]i009: Command Line: '-burn.clean.room=C:\Users\hp\Downloads\SEB_3.6.0.633_SetupBundle.exe -burn.filehandle.attached=576 -burn.filehandle.self=572'
+[211C:02F0][2024-01-26T23:47:45]i000: Setting string variable 'WixBundleOriginalSource' to value 'C:\Users\hp\Downloads\SEB_3.6.0.633_SetupBundle.exe'
+[211C:02F0][2024-01-26T23:47:45]i000: Setting string variable 'WixBundleOriginalSourceFolder' to value 'C:\Users\hp\Downloads\'
+[211C:02F0][2024-01-26T23:47:45]i000: Setting string variable 'WixBundleLog' to value 'C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745.log'
+[211C:02F0][2024-01-26T23:47:45]i000: Setting string variable 'WixBundleName' to value 'Safe Exam Browser'
+[211C:02F0][2024-01-26T23:47:45]i000: Setting string variable 'WixBundleManufacturer' to value 'ETH Zürich'
+[211C:3A30][2024-01-26T23:47:45]i000: Setting numeric variable 'WixStdBALanguageId' to value 1033
+[211C:3A30][2024-01-26T23:47:45]i000: Setting version variable 'WixBundleFileVersion' to value '3.6.0.633'
+[211C:02F0][2024-01-26T23:47:45]i100: Detect begin, 6 packages
+[211C:02F0][2024-01-26T23:47:45]i000: Setting string variable 'NETFRAMEWORK45' to value '533320'
+[211C:02F0][2024-01-26T23:47:45]i052: Condition 'VersionNT64' evaluates to true.
+[211C:02F0][2024-01-26T23:47:45]i000: Setting version variable 'VisualCppInstalledVersionX64' to value '14.32.31326.0'
+[211C:02F0][2024-01-26T23:47:45]i052: Condition 'NOT VersionNT64' evaluates to false.
+[211C:02F0][2024-01-26T23:47:45]i000: Registry value not found. Key = 'SOFTWARE\Microsoft\EdgeUpdate\Clients\{F3017226-FE2A-4295-8BDF-00C3A9A7E4C5}', Value = 'EBWebView'
+[211C:02F0][2024-01-26T23:47:45]i052: Condition 'NETFRAMEWORK45 >= DotNetMinimumVersion' evaluates to true.
+[211C:02F0][2024-01-26T23:47:45]i052: Condition 'VisualCppInstalledVersionX64 >= VisualCppMinimumVersion' evaluates to true.
+[211C:02F0][2024-01-26T23:47:45]i052: Condition 'VisualCppInstalledVersionX86 >= VisualCppMinimumVersion' evaluates to false.
+[211C:02F0][2024-01-26T23:47:45]i101: Detected package: NetFx48Web, state: Present, cached: None
+[211C:02F0][2024-01-26T23:47:45]i101: Detected package: vc_redist.x64.exe, state: Present, cached: None
+[211C:02F0][2024-01-26T23:47:45]i101: Detected package: vc_redist.x86.exe, state: Absent, cached: None
+[211C:02F0][2024-01-26T23:47:45]i101: Detected package: MicrosoftEdgeWebview2Setup.exe, state: Absent, cached: None
+[211C:02F0][2024-01-26T23:47:45]i101: Detected package: SetupX64, state: Absent, cached: None
+[211C:02F0][2024-01-26T23:47:45]i101: Detected package: SetupX86, state: Absent, cached: None
+[211C:02F0][2024-01-26T23:47:45]i199: Detect complete, result: 0x0
+[211C:3A30][2024-01-26T23:47:51]i000: Setting numeric variable 'EulaAcceptCheckbox' to value 1
+[211C:02F0][2024-01-26T23:47:51]i200: Plan begin, 6 packages, action: Install
+[211C:02F0][2024-01-26T23:47:51]w321: Skipping dependency registration on package with no dependency providers: NetFx48Web
+[211C:02F0][2024-01-26T23:47:51]i052: Condition 'VersionNT64' evaluates to true.
+[211C:02F0][2024-01-26T23:47:51]w321: Skipping dependency registration on package with no dependency providers: vc_redist.x64.exe
+[211C:02F0][2024-01-26T23:47:51]i052: Condition 'NOT VersionNT64' evaluates to false.
+[211C:02F0][2024-01-26T23:47:51]w321: Skipping dependency registration on package with no dependency providers: vc_redist.x86.exe
+[211C:02F0][2024-01-26T23:47:51]i052: Condition 'NOT (REMOVE OR RuntimeInstalled)' evaluates to true.
+[211C:02F0][2024-01-26T23:47:51]w321: Skipping dependency registration on package with no dependency providers: MicrosoftEdgeWebview2Setup.exe
+[211C:02F0][2024-01-26T23:47:51]i000: Setting string variable 'WixBundleLog_MicrosoftEdgeWebview2Setup.exe' to value 'C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745_000_MicrosoftEdgeWebview2Setup.exe.log'
+[211C:02F0][2024-01-26T23:47:51]i052: Condition 'VersionNT64' evaluates to true.
+[211C:02F0][2024-01-26T23:47:51]i000: Setting string variable 'WixBundleRollbackLog_SetupX64' to value 'C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745_001_SetupX64_rollback.log'
+[211C:02F0][2024-01-26T23:47:51]i000: Setting string variable 'WixBundleLog_SetupX64' to value 'C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745_001_SetupX64.log'
+[211C:02F0][2024-01-26T23:47:51]i052: Condition 'NOT VersionNT64' evaluates to false.
+[211C:02F0][2024-01-26T23:47:51]i201: Planned package: NetFx48Web, state: Present, default requested: Present, ba requested: Present, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[211C:02F0][2024-01-26T23:47:51]i201: Planned package: vc_redist.x64.exe, state: Present, default requested: Present, ba requested: Present, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[211C:02F0][2024-01-26T23:47:51]i201: Planned package: vc_redist.x86.exe, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[211C:02F0][2024-01-26T23:47:51]i201: Planned package: MicrosoftEdgeWebview2Setup.exe, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: None, cache: Yes, uncache: No, dependency: None
+[211C:02F0][2024-01-26T23:47:51]i201: Planned package: SetupX64, state: Absent, default requested: Present, ba requested: Present, execute: Install, rollback: Uninstall, cache: Yes, uncache: No, dependency: Register
+[211C:02F0][2024-01-26T23:47:51]i201: Planned package: SetupX86, state: Absent, default requested: Absent, ba requested: Absent, execute: None, rollback: None, cache: No, uncache: No, dependency: None
+[211C:02F0][2024-01-26T23:47:51]i299: Plan complete, result: 0x0
+[211C:02F0][2024-01-26T23:47:51]i300: Apply begin
+[211C:02F0][2024-01-26T23:47:51]i010: Launching elevated engine process.
+[211C:02F0][2024-01-26T23:47:54]i011: Launched elevated engine process.
+[211C:02F0][2024-01-26T23:47:55]i012: Connected to elevated engine.
+[0B04:2B94][2024-01-26T23:47:55]i358: Pausing automatic updates.
+[0B04:2B94][2024-01-26T23:47:55]i359: Paused automatic updates.
+[0B04:2B94][2024-01-26T23:47:55]i360: Creating a system restore point.
+[0B04:2B94][2024-01-26T23:47:55]w363: Could not create system restore point, error: 0x80070422. Continuing...
+[0B04:2B94][2024-01-26T23:47:55]i370: Session begin, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a}, options: 0x7, disable resume: No
+[0B04:2B94][2024-01-26T23:47:55]i000: Caching bundle from: 'C:\Users\hp\AppData\Local\Temp\{017D99C8-66A3-4CBF-BD09-B045BC6BEFAF}\.be\SetupBundle.exe' to: 'C:\ProgramData\Package Cache\{12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a}\SetupBundle.exe'
+[0B04:2B94][2024-01-26T23:47:55]i320: Registering bundle dependency provider: {12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a}, version: 3.6.0.633
+[0B04:2B94][2024-01-26T23:47:55]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a}, resume: Active, restart initiated: No, disable resume: No
+[0B04:0964][2024-01-26T23:47:55]i305: Verified acquired payload: MicrosoftEdgeWebview2Setup.exe at path: C:\ProgramData\Package Cache\.unverified\MicrosoftEdgeWebview2Setup.exe, moving to: C:\ProgramData\Package Cache\17068C55B3C15E1213436BA232BBD79D90985B31\MicrosoftEdgeWebview2Setup.exe.
+[0B04:0964][2024-01-26T23:47:56]i305: Verified acquired payload: SetupX64 at path: C:\ProgramData\Package Cache\.unverified\SetupX64, moving to: C:\ProgramData\Package Cache\{7DE00B63-C06A-4610-A40B-2240DBB01003}v3.6.0.633\Setup.msi.
+[0B04:2B94][2024-01-26T23:47:56]i301: Applying execute package: MicrosoftEdgeWebview2Setup.exe, action: Install, path: C:\ProgramData\Package Cache\17068C55B3C15E1213436BA232BBD79D90985B31\MicrosoftEdgeWebview2Setup.exe, arguments: '"C:\ProgramData\Package Cache\17068C55B3C15E1213436BA232BBD79D90985B31\MicrosoftEdgeWebview2Setup.exe" /silent /install'
+[211C:02F0][2024-01-26T23:48:30]i319: Applied execute package: MicrosoftEdgeWebview2Setup.exe, result: 0x0, restart: None
+[0B04:2B94][2024-01-26T23:48:30]i323: Registering package dependency provider: {7DE00B63-C06A-4610-A40B-2240DBB01003}, version: 3.6.0.633, package: SetupX64
+[0B04:2B94][2024-01-26T23:48:30]i301: Applying execute package: SetupX64, action: Install, path: C:\ProgramData\Package Cache\{7DE00B63-C06A-4610-A40B-2240DBB01003}v3.6.0.633\Setup.msi, arguments: ' ARPSYSTEMCOMPONENT="1" MSIFASTINSTALL="7"'
+[211C:02F0][2024-01-26T23:48:38]i319: Applied execute package: SetupX64, result: 0x0, restart: None
+[0B04:2B94][2024-01-26T23:48:38]i325: Registering dependency: {12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a} on package provider: {7DE00B63-C06A-4610-A40B-2240DBB01003}, package: SetupX64
+[0B04:2B94][2024-01-26T23:48:38]i372: Session end, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a}, resume: ARP, restart: None, disable resume: No
+[0B04:2B94][2024-01-26T23:48:38]i371: Updating session, registration key: SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a}, resume: ARP, restart initiated: No, disable resume: No
+[211C:02F0][2024-01-26T23:48:38]i399: Apply complete, result: 0x0, restart: None, ba requested restart:  No
+[211C:02F0][2024-01-26T23:48:40]i500: Shutting down, exit code: 0x0
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: DotNetMinimumVersion = 528040
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: EulaAcceptCheckbox = 1
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: NETFRAMEWORK45 = 533320
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: VersionNT64 = 10.0.0.0
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: VisualCppInstalledVersionX64 = 14.32.31326.0
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: VisualCppMinimumVersion = 14.26.28720.0
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleAction = 5
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleElevated = 1
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleFileVersion = 3.6.0.633
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleInstalled = 0
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleLog = C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745.log
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleLog_MicrosoftEdgeWebview2Setup.exe = C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745_000_MicrosoftEdgeWebview2Setup.exe.log
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleLog_SetupX64 = C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745_001_SetupX64.log
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleManufacturer = ETH Zürich
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleName = Safe Exam Browser
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleOriginalSource = C:\Users\hp\Downloads\SEB_3.6.0.633_SetupBundle.exe
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleOriginalSourceFolder = C:\Users\hp\Downloads\
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleProviderKey = {12fe3ee8-83fb-4ecd-adb1-8f7107a00d1a}
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleRollbackLog_SetupX64 = C:\Users\hp\AppData\Local\Temp\Safe_Exam_Browser_20240126234745_001_SetupX64_rollback.log
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleSourceProcessFolder = C:\Users\hp\Downloads\
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleSourceProcessPath = C:\Users\hp\Downloads\SEB_3.6.0.633_SetupBundle.exe
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleTag = 
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleUILevel = 4
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixBundleVersion = 3.6.0.633
+[211C:02F0][2024-01-26T23:48:40]i410: Variable: WixStdBALanguageId = 1033
+[211C:02F0][2024-01-26T23:48:40]i007: Exit code: 0x0, restarting: No

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="206px" height="159px" viewBox="0 0 206 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 30</title>
+    <defs>
+        <path d="M4,0 L176,0 C178.209139,-8.49901461e-16 180,1.790861 180,4 L180,123 C180,125.209139 178.209139,127 176,127 L94,127 L94,127 L90,133 L86,127 L4,127 C1.790861,127 2.705415e-16,125.209139 0,123 L0,4 C-7.1463071e-16,1.790861 1.790861,-3.82769592e-17 4,0 Z" id="path-1"></path>
+        <filter x="-11.9%" y="-11.7%" width="123.9%" height="132.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="6" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="支付页信用卡信息填写" transform="translate(-564.000000, -101.000000)">
+            <g id="编组-30" transform="translate(577.000000, 108.000000)">
+                <g id="矩形" opacity="0.9">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use stroke-opacity="0.15" stroke="#000000" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="编组-29" transform="translate(22.000000, 22.000000)">
+                    <rect id="矩形" fill="#758290" x="0" y="0" width="136" height="84" rx="4"></rect>
+                    <text id="Credit-Card" font-family="PingFangSC-Semibold, PingFang SC" font-size="10" font-weight="500" fill="#FFFFFF" fill-opacity="0.8">
+                        <tspan x="5" y="13">Credit Card</tspan>
+                    </text>
+                    <text id="1234-5678-9012-3456" font-family="Avenir-Book, Avenir" font-size="12" font-weight="normal" fill="#FFFFFF" fill-opacity="0.8">
+                        <tspan x="9" y="58">1234 5678 9012 3456</tspan>
+                    </text>
+                    <text id="05-/-22" font-family="Avenir-Book, Avenir" font-size="8" font-weight="normal" fill="#FFFFFF" fill-opacity="0.8">
+                        <tspan x="11" y="75">05 / 22 </tspan>
+                    </text>
+                    <text id="05-/-27" font-family="Avenir-Book, Avenir" font-size="8" font-weight="normal" fill="#FFFFFF" fill-opacity="0.8">
+                        <tspan x="51" y="75">05 / 27</tspan>
+                    </text>
+                    <text id="BANK" font-family="PingFangSC-Semibold, PingFang SC" font-size="10" font-weight="500" fill="#FFFFFF" fill-opacity="0.8">
+                        <tspan x="103" y="13">BANK</tspan>
+                    </text>
+                    <text id="VISA" font-family="PingFangSC-Semibold, PingFang SC" font-size="12" font-weight="500" fill="#FFFFFF" fill-opacity="0.8">
+                        <tspan x="105" y="78">VISA</tspan>
+                    </text>
+                </g>
+                <rect id="矩形" stroke="#F46D43" stroke-width="2" x="12" y="63" width="156" height="25" rx="4"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

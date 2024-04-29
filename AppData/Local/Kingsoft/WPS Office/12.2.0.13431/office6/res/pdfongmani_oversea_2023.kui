@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell component="pdf" name="ongmani" tc="pdfongmani" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<style name="2013"/>
+	<theme path="themes/ongmanipdf.kuip"/>
+	<attributes path="attributes.kuip"/>
+	<import path="common.kuip"/>
+	<import path="pdfcommon_oversea_2023.kuip"/>
+	<tips path="tips/pdftips.kuip"/>
+	<libraries/>
+	<mainwindow caption="@Kingsoft PDF" frameless="1" tc="mainwindow">
+		<commands tc="commands">
+			<KWindowTitleBarButtonCommand id="Menu Bar" visible="0">
+				<command idQ="FileMenu"/>
+				<command idQ="ViewMenu"/>
+				<command isQ="UserFeedback"/>
+			</KWindowTitleBarButtonCommand>
+			<KWindowTitleButtonGroupCommand id="sysbuttongroup">
+				<KTitleGroupSeperatorCommand space="7"/>
+				<KMinButtonCommand icon="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable" qtspyName="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable" text="@Minimize Window"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KMaxButtonCommand customTip2="@Restore Window" customTip="@Maximize Window" icon="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" iconMax="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" iconRestore="TitleRestoreButton;TitleRestoreButton-hover;TitleRestoreButton-down;TitleRestoreButton-disable" qtspyName="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" text="@Maximize Window"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KCloseButtonCommand icon="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable" qtspyName="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable" text="@Close Window"/>
+			</KWindowTitleButtonGroupCommand>
+			<KListCommand id="KOSUserLoginTipRights">
+				<KLoginTipRightCommand icon="LR_FileRoaming" id="LoginRight_Roaming" text="@File Roaming"/>
+				<KLoginTipRightCommand icon="LR_CloudSpace" id="LoginRight_Cloud" text="@Cloud Space"/>
+				<KLoginTipRightCommand icon="LR_ConvSharing" id="LoginRight_Sharing" text="@Convenient Sharing"/>
+				<KLoginTipRightCommand icon="LR_OnlineEditing" id="LoginRight_EditOnline" text="@Online Editing"/>
+				<KLoginTipRightCommand icon="LR_QuickRetrieve" id="LoginRight_Retrieve" text="@Quick Retrieve"/>
+				<KLoginTipRightCommand icon="LR_AccountUpgrade" id="LoginRight_Upgrade" text="@Account Upgrade"/>
+			</KListCommand>
+			<KxPdfUserLoginQuiteMenuCommand filter="WPSPDFStandalone=true" hotKey="T" id="KxPdfUserLoginQuiteMenuCommand" ksoCmd="KxPdfUserLoginQuiteMenuCommand" rbHotKey="T" text="@Sign in"/>
+			<KxPdfUserGiftMenuCommand id="KxPdfUserGiftMenuCommand"/>
+			<kxKOSRechargeCommand hotKey="R" icon="OS_Recharge" id="KOSRechargeCmd" ksoCmd="KOSRechargeCmd" rbHotKey="R" text="@Recharge"/>
+			<kxPdfLogoutCommand customTip="kxPdfLogoutTip" hotKey="X" icon="p_usermenu_logout" id="KxPdfLogoutCommand" ksoCmd="kxPdfLogoutCommand" rbHotKey="X" text="@Sign out"/>
+			<KxPdfUserCenterCommand filter="WPSPDFStandalone=true" giftCommand="KxPdfUserGiftMenuCommand" id="pdfuserCenterCmd">
+				<KxPdfAccountInfoCommand icon="p_usermenu_accountinfo" id="UserInfoCmd" text="@accout info"/>
+				<KxPdfUpgradeVIPCommand icon="p_usermenu_upgradevip" id="UpgradeVIPeCmd" text="@upgrade VIP"/>
+				<KxPdfVipPrivilegeCommand icon="p_usermenu_usercenter" id="VipPrivilegeCmd" text="@Vip Privilege"/>
+				<command idQ="KxPdfLogoutCommand"/>
+			</KxPdfUserCenterCommand>
+			<kxKOSLogoutCommand customTip="KOSLogoutTip" hotKey="O" icon="os_userquit" id="KOSLogoutCommand" ksoCmd="KOSLogoutCommand" rbHotKey="O" text="@Sign out"/>
+			<KxPdfCompanyMenuCommand filter="WPSPDFStandalone=true" id="CompanyIDCmd">
+				<KxPdfAccountInfoCommand icon="p_usermenu_accountinfo" id="UserInfoCmd" text="@accout info"/>
+				<KxPdfUpgradeVIPCommand icon="p_usermenu_upgradevip" id="UpgradeVIPeCmd" text="@upgrade VIP"/>
+				<KxPdfVipPrivilegeCommand icon="p_usermenu_usercenter" id="VipPrivilegeCmd" text="@Vip Privilege"/>
+				<command idQ="KxPdfLogoutCommand"/>
+			</KxPdfCompanyMenuCommand>
+			<KUserCenterMenuCommand filter="support:WPSCloudLogin=true;support:EnableAccount=true;support:WPSPDFStandalone=true" id="PDFUserCenterMenuCmd">
+				<KxOpenPersonalCenterCommand icon="OS_ViewUserInfo" id="OpenPersonalCenterCmd" text="@Personal Center"/>
+				<command idQ="KxPdfLogoutCommand"/>
+			</KUserCenterMenuCommand>
+			<KUserCenterCommand filter="support:WPSPDFStandalone=false" giftCommand="kxKOSUserGiftMenuCmd" id="userCenterCmd">
+				<KUserInfoCommand icon="os_userinfo" id="UserInfoCmd" text="@accout info"/>
+				<KUserMessageCenterCommand filter="support:UserMessageCenter=true" icon="os_usermessagecenter" id="UserMessageCenterCmd" text="@message Center"/>
+				<KUserSecureCommand icon="os_usersecure" id="UserSecureCmd" text="@accout secure"/>
+				<command filter="category=personal" idQ="BackupCenterUserMenu"/>
+				<KUserCenterTriggerCommand icon="os_usercenter" id="UserCenterTriggerCmd" text="@member Center"/>
+				<command idQ="KOSLogoutCommand"/>
+			</KUserCenterCommand>
+			<KLayoutWidgetCommand fixedWidth="1"/>
+			<kxServiceExpireTipQuiteMenuCommand id="KServiceExpireTipQuiteMenuCommand" ksoCmd="KServiceExpireTipQuiteMenuCommand" text="@Service Expired"/>
+			<KxPdfFeedbackCommand hotKey="f" icon="FileMenu_BBS" id="KxPdfFeedbackCommand" shellEntryType="filemenu" text="@feedback"/>
+			<KxWeChatCustomerServiceCommand filter="support:WeChatCustomerService=true" icon="wechatcustomerservice" id="WeChatCustomerService" text="@WeChat Customer Service"/>
+			<KxLegacyTriggerCommand icon="p_window_titlebar_fullscreen_normal;p_window_titlebar_fullscreen_hover;p_window_titlebar_fullscreen_click;p_window_titlebar_fullscreen_disable" id="PdfTitleFullScreen" ksoCmd="FullScreen" text="@FullScreen"/>
+			<KxLegacyTriggerCommand icon="Pdf_Settings" id="Settings" ksoCmd="CustomSetting" text="@Settings"/>
+			<KxValueCommand filter="category=common" icon="Pdf_Settings" id="TaskModeSettings" index="3" ksoCmd="CustomSetting" text="@Settings"/>
+			<KxMinisiteCommand aid="100041" hotKey="M" icon="minisite;minisite-hover;minisite-down" id="MinisitePlugin" ksoCmd="MinisitePlugin" text="@Minisite"/>
+			<KListCommand id="QAndABar" text="@Quick Access Toolbar">
+				<command idQ="TabbarQAndA"/>
+			</KListCommand>
+			<KProxyCommand autoLoad="true" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" filter="category=common" icon="Aigclogo" id="ProxyPdfaigc" shellEntry="righttop" targetId="Pdfaigc" targetModule="kassistpdf" text="@WPS AI"/>
+			<KListCommand id="RightCorner" text="@Quick Access Toolbar">
+				<command idQ="Pdfaigc" proxyCmdId="ProxyPdfaigc"/>
+				<KxLaunchMeetingCommand filter="category=common" icon="onlinemeeting" id="launchMeeting" text="@Launch Online Metting"/>
+				<KxKOSShareDocRightCornerCommandXa availableForReadOnlyMode="1" filter="category=common;support:EnableCloudService=true" icon="share_rightcorner" id="rightcorner_share_pdf" shellEntry="RightCorner;pdf|borderbar|righttop_share" text="@Share"/>
+				<separator/>
+				<KxLegacyTriggerCommand icon="Setting_p" id="Settings" ksoCmd="CustomSetting" text="@Settings"/>
+				<KListCommand availableForReadOnlyMode="1" hideArrowHint="1" icon="icon_logicctrl" text="@Interface Settings">
+					<KxCollEditCommand filter="category=common;support:EnableCloudService=true" icon="coll_edit" id="collEdit_rightCorner" text="@Co-Edit"/>
+					<KxPdfFeedbackCommand availableForReadOnlyMode="1" filter="category!=professional" hotKey="f" icon="Feedback_p" id="KxPdfFeedbackCommand" shellEntryType="topmenu" text="@feedback"/>
+					<KListCommand icon="RibbonSettingMore" id="RibbonSetting" text="@Ribbon Setting">
+						<KRbShowRibbonCheckCommand availableForReadOnlyMode="1" iconChecked="check" id="KRbLogicGroupVisibleCheckCmd" text="@Ribbon Auto Show/Hide"/>
+						<KRbCategoryAlignCheckCommand availableForReadOnlyMode="1" iconChecked="check" id="KRbCategoryAlignCheckCmd" text="@Ribbon Center Alignment"/>
+						<KRbClassicMenuHintCheckCommand availableForReadOnlyMode="1" iconChecked="check" id="KRbClassicMenuHintCheckCmd" text="@Ribbon Classic Menu"/>
+						<separator/>
+						<KHideOrShowTaskPaneCheckCommand availableForReadOnlyMode="1" iconChecked="check" id="KHideOrShowTaskPaneCheckCmd" text="@Show Taskpane"/>
+					</KListCommand>
+				</KListCommand>
+				<KRbLogicGroupVisibleToggleCommand availableForReadOnlyMode="1" bOnTitleGroup="0" icon="iconHide;iconHide-hover;iconHide-down;iconHide-disable" iconExtent="iconExtent;iconExtent-hover;iconExtent-down;iconExtent-disable" iconHide="iconHide;iconHide-hover;iconHide-down;iconHide-disable" iconStick="iconStick;iconStick-hover;iconStick-down" qtspyName="iconHide;iconHide-hover;iconHide-down;iconHide-disable" textExtent="@Show the Toolbar" textHide="@Hide the Toolbar" textStick="@Stick the Toolbar"/>
+			</KListCommand>
+			<KListCommand id="RightCorner_Ebook" text="@Quick Access Toolbar">
+				<KListCommand hideArrowHint="1" icon="icon_logicctrl" text="@Interface Settings">
+					<KRbShowRibbonCheckCommand iconChecked="check" id="KRbLogicGroupVisibleCheckCmd" text="@Ribbon Auto Show/Hide"/>
+					<KRbCategoryAlignCheckCommand iconChecked="check" id="KRbCategoryAlignCheckCmd" text="@Ribbon Center Alignment"/>
+				</KListCommand>
+				<KRbLogicGroupVisibleToggleCommand bOnTitleGroup="0" icon="iconHide;iconHide-hover;iconHide-down;iconHide-disable" iconExtent="iconExtent;iconExtent-hover;iconExtent-down;iconExtent-disable" iconHide="iconHide;iconHide-hover;iconHide-down;iconHide-disable" iconStick="iconStick;iconStick-hover;iconStick-down" qtspyName="iconHide;iconHide-hover;iconHide-down;iconHide-disable" textExtent="@Show the Toolbar" textHide="@Hide the Toolbar" textStick="@Stick the Toolbar"/>
+			</KListCommand>
+			<KxPdfHPRecentFileCommand hotKey="R" id="PdfHPRecentFileCommand" ksoCmd="RecentFileList" rbFileMenuEmbed="1" rbHotKey="R" text="@Recent Documents"/>
+			<KxLegacyTriggerCommand dialogHint="1" hotKey="t" icon="Options" id="m_rbOptions" ksoCmd="Options" rbHotKey="T" text="@Options"/>
+			<KxPdfRecentFilePageCommand hotKey="R" id="RecentFilePageCMD" ksoCmd="RecentFileList" rbFileMenuEmbed="1" rbHotKey="R" text="@Recent Documents"/>
+			<KRbFileMenuCommand classicCommand="Menu Bar" curentProject="pdf" customCommand="m_rbOptions" delayloadPath="commands/pdf_oversea_2023/ongmani/CT_File.kuip" hotKey="F" icon="p-logo-16" id="CT_File" newSkinFlash="false" popupRainbow="true" quitCommand="Exit" rbHotKey="F" recentFileCommand="RecentFilePageCMD" skinSwitchCommand="switchFaceDlgOnFileMenu" text=""/>
+			<KRbFileMenuCommand classicCommand="Menu Bar" curentProject="pdf" customCommand="m_rbOptions" delayloadPath="commands/pdf_oversea_2023/ongmani/CT_EbookFile.kuip" hotKey="F" icon="p-logo-16" id="CT_EbookFile" newSkinFlash="false" popupRainbow="true" quitCommand="Exit" rbHotKey="F" skinSwitchCommand="switchFaceDlgOnFileMenu" text=""/>
+			<KRbTabWidgetCommand customAttribute="IF(platform!=unix;patent:LogicGroupShowExtensionButton=false){arrowVisible=0}" fileCommand="CT_File" id="tabwidget" rightCornerCommand="sysbuttongroup" rightCornerExtentCommand="RightCorner" tabbarSearchCommand="QAndABar" text="@testRbTabWidget" titleVisible="0">
+				<KRbEbookReadTabCommand delayloadPath="commands/pdf_oversea_2023/ongmani/CT_EbookRead.kuip" id="CT_EbookRead" text="@Menu EbookRead" visibleAlone="1"/>
+				<KRbTabCommand availableForReadOnlyMode="1" delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Home.kuip" hotKey="H" id="CT_Home" rbHotKey="H" text="@Tab_Home"/>
+				<KRbTabCommand customAttribute="IF(category=common){redPointSupport=false}}" delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Edit.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="G" id="CT_Edit" rbHotKey="G" text="@Tab_Edite"/>
+				<KRbTabCommand delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Postil.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="K" id="CT_Postil" rbHotKey="K" text="@Tab_Postil"/>
+				<KRbTabCommand delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Edit.kuip" filter="category!=common;support:PDFReadOnlyVersion=false" hotKey="G" id="CT_Edit" rbHotKey="G" text="@Tab_Edite"/>
+				<KRbTabCommand availableForReadOnlyMode="1" delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Convert.kuip" hotKey="V" id="CT_Convert" rbHotKey="V" text="@Tab_Convert"/>
+				<KRbTabCommand delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Page.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="F" id="CT_Page" rbHotKey="F" text="@Tab_Page"/>
+				<KxFillSignatureRbTabCommand delayloadPath="commands/pdf_oversea_2023/ongmani/CT_FormFilling.kuip" hotKey="I" id="CT_FormFilling" rbHotKey="I" text="@FormFilling"/>
+				<KRbTabCommand delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Protect.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="P" id="CT_Protect" rbHotKey="P" text="@Tab_Protect"/>
+				<KRbTabCommand availableForReadOnlyMode="1" delayloadPath="commands/pdf_oversea_2023/ongmani/CT_FeaturedApp.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="T" id="CT_FeaturedApp" rbHotKey="T" text="@Tools"/>
+				<KRbTabCommand availableForReadOnlyMode="1" delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Batch.kuip" id="CT_Batch" text="@Tab_Batch"/>
+				<KxPdfTextCommentBoxStyleContext delayloadPath="commands/pdf_oversea_2023/ongmani/CT_TextCommentBox.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="F" id="CT_TextCommentBox" rbHotKey="F" text="@TextStyle"/>
+				<KxPdfInstructBoxStyleContext delayloadPath="commands/pdf_oversea_2023/ongmani/CT_InstructBox.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="F" id="CT_InstructBox" rbHotKey="F" text="@TextStyle"/>
+				<KxPdfEditPictureContext delayloadPath="commands/pdf_oversea_2023/ongmani/CT_PictureEdit.kuip" filter="support:PDFReadOnlyVersion=false;support:PdfSceneMode=false" hotKey="F" id="CT_PictureEdit" rbHotKey="F" text="@PictureEdite"/>
+				<KxPdfEditTextContext delayloadPath="commands/pdf_oversea_2023/ongmani/CT_TextEdit.kuip" filter="support:PDFReadOnlyVersion=false;support:PdfSceneMode=false" hotKey="F" id="CT_TextEdit" rbHotKey="F" text="@TextEditTool"/>
+				<KxPdfMeasureToolContext delayloadPath="commands/pdf_oversea_2023/ongmani/CT_MeasureTool.kuip" filter="support:PDFReadOnlyVersion=false" hotKey="F" id="CT_MeasureTool" rbHotKey="F" text="@MeasureTool"/>
+				<KxPdfGraffitiContext delayloadPath="commands/pdf_oversea_2023/ongmani/CT_Graffiti.kuip" filter="support:PDFReadOnlyVersion=false" id="CT_Graffiti" text="@Graffiti"/>
+				<KxPdfEditMediaContext delayloadPath="commands/pdf/ongmani/CT_Media.kuip" filter="support:PDFReadOnlyVersion=false" id="CT_MediaEdit"/>
+				<KxPdfPathStyleContext delayloadPath="commands/pdf/ongmani/CT_PathStyle.kuip" filter="support:PDFReadOnlyVersion=false;category=personal,common" hotKey="F" id="CT_PathStyle" rbHotKey="F" text="@Tab_Path"/>
+			</KRbTabWidgetCommand>
+			<KProxyCommand autoLoad="true" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPdfHPRoamingFileCommand" targetId="PdfHPRoamingFileCommand" targetModule="officespace"/>
+			<KDocumentTranslateCommand customTip="TranslationAll" icon="Pdf_TranslationAll_v2" id="TranslationAll" text="@TranslationAll"/>
+			<KProxyCommand autoLoad="false" customTip="AIOCR2Pdf" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="AIOCR2Pdf" id="ProxyAIOCR2Pdf" targetId="AIOCR2Pdf" targetModule="aiocr2pdf" text="@AIOCR2Pdf"/>
+			<KProxyCommand customTip="DocumentFix" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" hotKey="RF" icon="DocumentFix" id="ProxyDocumentFix" rbHotKey="RF" targetId="DocumentFix" targetModule="kdocumentfix" text="@Document Fix"/>
+			<KProxyCommand autoLoad="true" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="BackupCenter" id="ProxyBackupCenter" targetId="BackupCenter" targetModule="kbackupcenter" text="@Backup Center"/>
+			<KProxyCommand autoLoad="true" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Global Search" id="ProxyGlobalSearch" targetId="GlobalSearch" targetModule="KglobalSearch" text="@Global Search"/>
+			<KxAddTabCommand customAttribute="IF(category=common){tpIcon=ionlinecustsel}" defualtHide="TpWpsTableStyle" filter="category!=personal" id="customTaskpane" shortHint="@Settings" text="@Customize Task Window" tpIcon="icustSel;icustSel-mos;icustSel-down" visible="1"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxySaveAs_Compress" targetId="SaveAs_Compress" targetModule="pdfbatchcompression"/>
+			<KxValueCommand customTip="CompressTips" icon="PDF_Compress" id="SpecialFunc_PDFZZCompressBridge" index="0" ksoCmd="CompressBridge" text="@Compress"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxySpecialFunc_PDFZZCompress" targetId="SpecialFunc_PDFZZCompress" targetModule="pdfbatchcompression"/>
+			<KProxyCommand autoLoad="false" customTip="PDFCompress" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyMoreApp_Compress" targetId="MoreApp_Compress" targetModule="pdfbatchcompression" text="@PDFCompress"/>
+			<KProxyCommand autoLoad="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyUpload_Compress" targetId="Upload_Compress" targetModule="pdfbatchcompression" text="@Compress"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyFileIconKListCommand_Compress" targetId="FileIconKListCommand_Compress" targetModule="pdfbatchcompression"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyOperatePopup_Compress" targetId="OperatePopup_Compress" targetModule="pdfbatchcompression"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyRB_Compress" targetId="RB_Compress" targetModule="pdfbatchcompression"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyRB_BatchPrint" targetId="RbFileMenuBatchPrintMenu" targetModule="pdfbatchprint"/>
+			<KProxyCommand autoLoad="false" customTip="AddPageNumberTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Pdf_PageNumber" id="ProxyInsert_AddPageNumber" targetId="Insert_AddPageNumber" targetModule="pdfaddpagenumber" text="@AddPageNumber"/>
+			<KProxyCommand autoLoad="false" customTip="AddPageNumberTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Pdf_AddPageNumber" id="ProxyOrgPage_AddPageNumber" targetId="OrgPage_AddPageNumber" targetModule="pdfaddpagenumber" text="@AddPageNumber"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyOperatePopup_AddPageNumber" targetId="OperatePopup_AddPageNumber" targetModule="pdfaddpagenumber"/>
+			<KProxyCommand autoLoad="false" customTip="UpdatePageNumberTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Pdf_UpdatePageNumber" id="ProxyEdit_UpdatePageNumber" targetId="Insert_UpdatePageNumber" targetModule="pdfaddpagenumber" text="@UpdatePageNumber"/>
+			<KProxyCommand autoLoad="false" customTip="UpdatePageNumberTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Pdf_UpdatePageNumber" id="ProxyInsert_UpdatePageNumber" targetId="Edit_UpdatePageNumber" targetModule="pdfaddpagenumber" text="@UpdatePageNumber"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteNumberTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Pdf_DeletePageNumber" id="ProxyEdit_DeletePageNumber" targetId="Edit_DeletePageNumber" targetModule="pdfaddpagenumber" text="@DeletePageNumber"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteNumberTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Pdf_DeletePageNumber" id="ProxyInsert_DeletePageNumber" targetId="Insert_DeletePageNumber" targetModule="pdfaddpagenumber" text="@DeletePageNumber"/>
+			<KxLegacyTriggerCommand customTip="AddPageNumberTips" id="RightMenu_AddPageNumberBridge" ksoCmd="RightMenu_AddPageNumberBridge" text="@AddPageNumber"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyRightMenu_AddPageNumber" targetId="RightMenu_AddPageNumber" targetModule="pdfaddpagenumber"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPrint_AddPageNumber" targetId="Print_AddPageNumber" targetModule="pdfaddpagenumber"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPdfDataStatistics" targetId="PdfDataStatistics" targetModule="pdfdatastatistics" text="@PdfDataStatistics"/>
+			<KProxyCommand autoLoad="false" customTip="AddHeaderFooterTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyAddHeaderFooter_Page" targetId="AddHeaderFooter_Page" targetModule="pdfpageheaderfooter" text="@AddHeaderFooter"/>
+			<KProxyCommand autoLoad="false" customTip="UpdateHeaderFooterTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyUpdateHeaderFooter_Page" targetId="UpdateHeaderFooter_Page" targetModule="pdfpageheaderfooter" text="@UpdateHeaderFooter"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteHeaderFooterTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyDeleteHeaderFooter_Page" targetId="DeleteHeaderFooter_Page" targetModule="pdfpageheaderfooter" text="@DeleteHeaderFooter"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPrint_AddHeaderFooter" targetId="Print_AddHeaderFooter" targetModule="pdfpageheaderfooter"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyOperatePopup_AddHeaderFooter" targetId="OperatePopup_AddHeaderFooter" targetModule="pdfpageheaderfooter"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyOperatePopup_UpdateHeaderFooter" targetId="OperatePopup_UpdateHeaderFooter" targetModule="pdfpageheaderfooter"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyOperatePopup_DeleteHeaderFooter" targetId="OperatePopup_DeleteHeaderFooter" targetModule="pdfpageheaderfooter"/>
+			<KProxyCommand autoLoad="false" customTip="AddHeaderFooterTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyAddHeaderFooter_Edit" targetId="AddHeaderFooter_Edit" targetModule="pdfpageheaderfooter" text="@AddHeaderFooter"/>
+			<KProxyCommand autoLoad="false" customTip="UpdateHeaderFooterTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyUpdateHeaderFooter_Edit" targetId="UpdateHeaderFooter_Edit" targetModule="pdfpageheaderfooter" text="@UpdateHeaderFooter"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteHeaderFooterTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyDeleteHeaderFooter_Edit" targetId="DeleteHeaderFooter_Edit" targetModule="pdfpageheaderfooter" text="@DeleteHeaderFooter"/>
+			<KProxyCommand autoLoad="false" customTip="AddBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyAddBackGround_Edit" targetId="AddBackGround_Edit" targetModule="pdfbackground" text="@AddBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="UpdateBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyUpdateBackGround_Edit" targetId="UpdateBackGround_Edit" targetModule="pdfbackground" text="@UpdateBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyDeleteBackGround_Edit" targetId="DeleteBackGround_Edit" targetModule="pdfbackground" text="@DeleteBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="AddBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyAddBackGround_Insert" spaceHint="singleloose" targetId="AddBackGround_Insert" targetModule="pdfbackground" text="@AddBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="UpdateBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyUpdateBackGround_Insert" spaceHint="singleloose" targetId="UpdateBackGround_Insert" targetModule="pdfbackground" text="@UpdateBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyDeleteBackGround_Insert" spaceHint="singleloose" targetId="DeleteBackGround_Insert" targetModule="pdfbackground" text="@DeleteBackGround"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyLoadOpencv" spaceHint="singleloose" targetId="LoadOpencv" targetModule="opencv"/>
+			<KProxyCommand autoLoad="false" customTip="PDFTOCad" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPdfAppCenterPdf2Cad" targetId="PdfAppCenterPdf2Cad" targetModule="pdfcadmutualconverter" text="@PDFTOCad"/>
+			<KProxyCommand customTip="CADTOPdf" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPdfCadMutualConverter" targetId="PdfCadMutualConverter" targetModule="pdfcadmutualconverter" text="@PdfCadMutualConverter"/>
+			<KProxyCommand delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPdfFloatTool" targetId="PdfFloatTool" targetModule="pdffloattool_xa" text="@PdfFloatTool"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" icon="Pdf_InvoicePrint" id="ProxyPdfElectronicInvoicePrint" targetId="PdfElectronicInvoicePrint" targetModule="kpdfelectronicinvoiceprint" text="@PdfElectronicInvoicePrint"/>
+			<KProxyCommand autoLoad="false" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPdfInvoiceAssist" targetId="PdfInvoiceAssist" targetModule="kpdfinvoiceassist"/>
+			<KProxyCommand customTip="AppCenterPdfInvoiceAssist" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyAppCenterPdfInvoiceAssist" targetId="AppCenterPdfInvoiceAssist" targetModule="kpdfinvoiceassist" text="@PdfInvoiceAssist"/>
+			<KProxyCommand autoLoad="false" customTip="AddBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyAddBackGround_Edit" spaceHint="singleloose" targetId="AddBackGround_Edit" targetModule="pdfbackground" text="@AddBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="UpdateBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyUpdateBackGround_Edit" spaceHint="singleloose" targetId="UpdateBackGround_Edit" targetModule="pdfbackground" text="@UpdateBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyDeleteBackGround_Edit" spaceHint="singleloose" targetId="DeleteBackGround_Edit" targetModule="pdfbackground" text="@DeleteBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="AddBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyAddBackGround_Insert" spaceHint="singleloose" targetId="AddBackGround_Insert" targetModule="pdfbackground" text="@AddBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="UpdateBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyUpdateBackGround_Insert" spaceHint="singleloose" targetId="UpdateBackGround_Insert" targetModule="pdfbackground" text="@UpdateBackGround"/>
+			<KProxyCommand autoLoad="false" customTip="DeleteBackGroundTips" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyDeleteBackGround_Insert" spaceHint="singleloose" targetId="DeleteBackGround_Insert" targetModule="pdfbackground" text="@DeleteBackGround"/>
+			<KxValueCommand customTip="PDFToWord" docExceptionPos="quickstart_2word" icon="Pdf_PDF2Word16" id="QAT_PDFZZ_PDFToWord" index="3" ksoCmd="PDF2Word" shortcutHint="Ctrl+Shift+W" text="@PDFToWord" wpsIsEanble="false"/>
+			<KProxyCommand autoLoad="true" delayLoadLib="false" delayloadPath="commands/pdf_oversea_2023/ongmani/ProxyCommands.kuip" id="ProxyPdfResumeMatch" targetId="PdfResumeMatch" targetModule="kdocerwpsscene" text="@PdfResumeMatch"/>
+			<KxTouchUiModeCommand customTip="TouchUiMode" filter="support:TouchUiMode=true" icon="TouchUiMode" id="TouchUiMode" text="@Touch Mode"/>
+			<KListCommand id="QAT_Menu" qtspyName="qmenu" text="@Quick Access Menu">
+				<command idQ="OpenFile"/>
+				<command idQ="QtSave"/>
+				<command idQ="Print"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+				<command idQ="TouchUiMode"/>
+				<command idQ="QAT_PDFZZ_PDFToWord"/>
+				<KxOptionsDlgTabCommand id="QAT_MoreCommands" ksoCmd="OptionsDlgTab" tabName="opeQat"/>
+			</KListCommand>
+			<KListCommand id="QAT" qtspyName="QT_Menu">
+				<command idQ="OpenFile"/>
+				<command idQ="QtSave"/>
+				<command idQ="Print"/>
+				<command filter="screenType=touch" idQ="TouchUiMode"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+			</KListCommand>
+			<KListCommand id="QTA_Line">
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+				<command idQ="QtSave"/>
+			</KListCommand>
+			<KxPdfFloatToolBarCommand id="kfloattoolbar">
+				<command idQ="FloatSelectionTool"/>
+				<command idQ="FloatHandTool"/>
+				<command idQ="Separator"/>
+				<command idQ="FloatZoomIn"/>
+				<command idQ="FloatZoomOut"/>
+				<command idQ="FloatZoom%"/>
+				<command idQ="Separator"/>
+				<command idQ="Float_ViewFitSwitch"/>
+				<command idQ="Float_ViewPageViewSwitch"/>
+				<command idQ="FloatClockwiseDoc"/>
+				<command idQ="Separator"/>
+				<command idQ="FloatToolbarClose"/>
+			</KxPdfFloatToolBarCommand>
+		</commands>
+		<dock cmd="ClassicalTaskpane" dockArea="dockArea_right"/>
+		<dock cmd="Navigationpane" dockArea="dockArea_left"/>
+		<krbtabwidget cmd="tabwidget"/>
+		<KRbQuicktoolLine cmd="QTA_Line"/>
+		<KRbQuicktoolCommand cmd="QAT" menu="QAT_Menu"/>
+		<floattoolbar cmd="kfloattoolbar"/>
+		<KNoTabPageCommand cmd="NoTabPage"/>
+		<screenshotstickers cmd="kscreenshotstickers"/>
+	</mainwindow>
+</shell>

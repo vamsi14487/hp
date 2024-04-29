@@ -1,0 +1,42 @@
+info: Started {"timestamp":"2024-01-16T05:58:46.154Z"}
+verbose: Ids: {"appRoot":"vscode-java-coding-pack","isTelemetryEnabled":true,"machineId":"6efc7ef68b6b0bd092e2d1aa0cbec4ee6089bbb9623183ca7d8f5998c095f6e0","sessionId":"d43d5195-0a34-4e52-99ec-b5adaee589ee1705384724940","timestamp":"2024-01-16T05:58:46.156Z","uiKind":1}
+verbose: Packed binaries: {"timestamp":"2024-01-16T05:58:52.865Z"}
+verbose: java_home candidate: {"candidate":{"hasJavac":true,"homedir":"C:\\Program Files\\Java\\jdk-21","version":{"java_version":"21.0.1","major":21}},"timestamp":"2024-01-16T05:58:52.877Z"}
+verbose: Looking for Code stable x64-user in x64 registry: HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1 {"timestamp":"2024-01-16T05:58:52.878Z"}
+verbose: Code stable x64-user is installed. {"timestamp":"2024-01-16T05:58:53.749Z"}
+verbose: Installed components: {"extensions":[],"jdk":{"homedir":"C:\\Program Files\\Java\\jdk-21","name":"JDK","version":"21"},"timestamp":"2024-01-16T05:58:53.749Z","vscode":{"homedir":"C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\","version":"1.85.1"}}
+verbose: runVSCodeCommand: {"0":"--install-extension","1":"vscjava.vscode-java-pack","timestamp":"2024-01-16T05:58:58.825Z"}
+verbose: Looking for Code stable x64-user in x64 registry: HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1 {"timestamp":"2024-01-16T05:58:58.826Z"}
+verbose: Code stable x64-user is installed. {"timestamp":"2024-01-16T05:58:58.986Z"}
+verbose: Installed vscode: {"homedir":"C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\","timestamp":"2024-01-16T05:58:58.986Z","version":"1.85.1"}
+verbose: exec: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\Code.exe {"timestamp":"2024-01-16T05:58:58.987Z"}
+verbose: cli: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd {"timestamp":"2024-01-16T05:58:58.987Z"}
+verbose: runVSCodeCommand: {"0":"--install-extension","1":"vscjava.vscode-java-pack","timestamp":"2024-01-16T06:02:54.650Z"}
+verbose: Looking for Code stable x64-user in x64 registry: HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1 {"timestamp":"2024-01-16T06:02:54.650Z"}
+verbose: Code stable x64-user is installed. {"timestamp":"2024-01-16T06:02:54.814Z"}
+verbose: Installed vscode: {"homedir":"C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\","timestamp":"2024-01-16T06:02:54.814Z","version":"1.85.1"}
+verbose: exec: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\Code.exe {"timestamp":"2024-01-16T06:02:54.815Z"}
+verbose: cli: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd {"timestamp":"2024-01-16T06:02:54.815Z"}
+verbose: runVSCodeCommand: {"0":"--install-extension","1":"vscjava.vscode-java-pack","timestamp":"2024-01-16T06:05:03.826Z"}
+verbose: Looking for Code stable x64-user in x64 registry: HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1 {"timestamp":"2024-01-16T06:05:03.827Z"}
+verbose: Code stable x64-user is installed. {"timestamp":"2024-01-16T06:05:04.029Z"}
+verbose: Installed vscode: {"homedir":"C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\","timestamp":"2024-01-16T06:05:04.029Z","version":"1.85.1"}
+verbose: exec: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\Code.exe {"timestamp":"2024-01-16T06:05:04.029Z"}
+verbose: cli: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd {"timestamp":"2024-01-16T06:05:04.029Z"}
+error: Error: (node:13556) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+(Use `Code --trace-deprecation ...` to show where the warning was created) {"isUserError":true,"timestamp":"2024-01-16T06:07:23.245Z"}
+info: Started {"timestamp":"2024-01-16T06:08:07.012Z"}
+verbose: Ids: {"appRoot":"vscode-java-coding-pack","isTelemetryEnabled":true,"machineId":"6efc7ef68b6b0bd092e2d1aa0cbec4ee6089bbb9623183ca7d8f5998c095f6e0","sessionId":"1b55acec-0ca7-44d2-a76e-57dc8b49c15c1705385286288","timestamp":"2024-01-16T06:08:07.013Z","uiKind":1}
+verbose: Packed binaries: {"timestamp":"2024-01-16T06:08:10.215Z"}
+verbose: java_home candidate: {"candidate":{"hasJavac":true,"homedir":"C:\\Program Files\\Java\\jdk-21","version":{"java_version":"21.0.1","major":21}},"timestamp":"2024-01-16T06:08:10.225Z"}
+verbose: Looking for Code stable x64-user in x64 registry: HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1 {"timestamp":"2024-01-16T06:08:10.226Z"}
+verbose: Code stable x64-user is installed. {"timestamp":"2024-01-16T06:08:10.388Z"}
+verbose: Installed components: {"extensions":[],"jdk":{"homedir":"C:\\Program Files\\Java\\jdk-21","name":"JDK","version":"21"},"timestamp":"2024-01-16T06:08:10.389Z","vscode":{"homedir":"C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\","version":"1.85.1"}}
+verbose: runVSCodeCommand: {"0":"--install-extension","1":"vscjava.vscode-java-pack","timestamp":"2024-01-16T06:08:12.190Z"}
+verbose: Looking for Code stable x64-user in x64 registry: HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1 {"timestamp":"2024-01-16T06:08:12.191Z"}
+verbose: Code stable x64-user is installed. {"timestamp":"2024-01-16T06:08:12.332Z"}
+verbose: Installed vscode: {"homedir":"C:\\Users\\hp\\AppData\\Local\\Programs\\Microsoft VS Code\\","timestamp":"2024-01-16T06:08:12.332Z","version":"1.85.1"}
+verbose: exec: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\Code.exe {"timestamp":"2024-01-16T06:08:12.333Z"}
+verbose: cli: C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd {"timestamp":"2024-01-16T06:08:12.333Z"}
+info: Started {"timestamp":"2024-01-16T06:11:43.408Z"}
+verbose: Ids: {"appRoot":"vscode-java-coding-pack","isTelemetryEnabled":true,"machineId":"6efc7ef68b6b0bd092e2d1aa0cbec4ee6089bbb9623183ca7d8f5998c095f6e0","sessionId":"81156041-f68b-435d-bde0-8d8f892b4e1c1705385502701","timestamp":"2024-01-16T06:11:43.409Z","uiKind":1}

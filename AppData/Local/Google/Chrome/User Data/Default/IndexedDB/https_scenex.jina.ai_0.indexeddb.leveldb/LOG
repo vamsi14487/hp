@@ -1,0 +1,18 @@
+2023/11/18-15:59:01.287 6420 Creating DB C:\Users\hp\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_scenex.jina.ai_0.indexeddb.leveldb since it was missing.
+2023/11/18-15:59:01.298 6420 Reusing MANIFEST C:\Users\hp\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_scenex.jina.ai_0.indexeddb.leveldb/MANIFEST-000001
+2023/11/18-15:59:01.316 1f80 Level-0 table #5: started
+2023/11/18-15:59:01.319 1f80 Level-0 table #5: 1776 bytes OK
+2023/11/18-15:59:01.322 1f80 Delete type=0 #3
+2023/11/18-15:59:01.323 1f80 Manual compaction at level-0 from '\x00\x01\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x02\x00\x00\x00' @ 0 : 0; will stop at (end)
+2023/11/18-15:59:18.482 4298 Level-0 table #7: started
+2023/11/18-15:59:18.486 4298 Level-0 table #7: 3802 bytes OK
+2023/11/18-15:59:18.488 4298 Delete type=0 #4
+2023/11/18-15:59:18.490 4298 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2023/11/18-15:59:18.490 4298 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x05\x01\x02\x012\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x009\x005\x009\x004\x000\x000\x006\x003\x008\x001\x000\x00:\x00w\x00e\x00b\x00:\x00e\x000\x008\x003\x004\x00b\x004\x000\x007\x001\x00f\x00f\x003\x00d\x004\x00b\x00e\x00c\x00b\x003\x00d\x00b' @ 214 : 1
+2023/11/18-15:59:18.490 4298 Compacting 1@1 + 1@2 files
+2023/11/18-15:59:18.494 4298 Generated table #8@1: 62 keys, 1927 bytes
+2023/11/18-15:59:18.494 4298 Compacted 1@1 + 1@2 files => 1927 bytes
+2023/11/18-15:59:18.496 4298 compacted to: files[ 0 0 1 0 0 0 0 ]
+2023/11/18-15:59:18.496 4298 Delete type=2 #5
+2023/11/18-15:59:18.496 4298 Delete type=2 #7
+2023/11/18-15:59:18.499 4298 Manual compaction at level-1 from '\x00\x05\x01\x02\x012\x00[\x00D\x00E\x00F\x00A\x00U\x00L\x00T\x00]\x00!\x001\x00:\x009\x005\x009\x004\x000\x000\x006\x003\x008\x001\x000\x00:\x00w\x00e\x00b\x00:\x00e\x000\x008\x003\x004\x00b\x004\x000\x007\x001\x00f\x00f\x003\x00d\x004\x00b\x00e\x00c\x00b\x003\x00d\x00b' @ 214 : 1 .. (end); will stop at (end)
